@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Personal Web Page</h1>
+    <p>Hey! Here are examples of HTML5 content and a form.</p>
+  </header>
+
+  <!-- Lists -->
+  <section>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading novels</li>
+      <li>Editing videos</li>
+      <li>Learning new programming languages</li>
+    </ul>
+
+    <h3>Steps I Follow When Learning</h3>
+    <ol>
+      <li>Set a goal</li>
+      <li>Watch tutorials</li>
+      <li>Practice coding daily</li>
+      <li>Build small projects</li>
+    </ol>
+  </section>
+
+  <!-- Table -->
+  <section>
+    <h2>Weekly Course Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Web development</td>
+          <td>10:00 AM - 12:00 PM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Python</td>
+          <td>2:00 PM - 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Database Design</td>
+          <td>10:00 AM - 12:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Startup Building</td>
+          <td>2:00 PM - 4:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media -->
+  <section>
+    <h2>Image</h2>
+    <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?auto=format&fit=crop&w=800&q=80" alt="summer leaves on a treeS"height ="200" width="400" />
+
+
+    <h3>Embedded Video</h3>
+    <video width="400" height="200" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Embedded Audio</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <h2>Contact Form</h2>
+    <form action="#" method="location" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend><br>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullname" placeholder="Enter your name.." required minlength="3" /><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required /><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="13" max="120" required /><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><hr>
+      </fieldset>  
+      
+
+      <fieldset>
+        <legend>Account Preferences</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}" title="At least 5 alphanumeric characters" /><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" /><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#ff0000" /><hr>
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Details</legend>
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea><br>
+
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Choose--</option>
+          <option value="kenya">Kenya</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>  
+          <option value="others">Others</option><br>
+        </select><br>
+      </fieldset>   
+        <label>
+          <input type="checkbox" name="subscribe" checked />
+          Subscribe to newsletter
+        </label>
+      
+
+      <input type="submit" value="Submit Form" />
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
